@@ -1,0 +1,56 @@
+.agent {
+    background: url("../img/agent/фон.png") center (center/cover) no-repeat;
+    min-height: 340px;
+    text-align: center;
+
+    &__icon {
+        padding-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--text-color);
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        width: 1000px;
+        font-size: 20px;
+        margin: 0 auto;
+        color: var(--text-color);
+    }
+}
+@media screen and (max-width: 1025px) {
+    .agent {
+        &__icon {
+            img {
+                width: 80px;
+                height: 80px;
+            }
+         }
+         &__title {
+             font-size: 22px;
+         }
+         &__text {
+             font-size: 18px;
+             width: 100%;
+             max-width: 700px;
+         }
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .agent {
+        &__text {
+            font-size: 14px;
+            padding: 0 10px;
+            
+        }
+        &__icon {
+            padding-top: 30px;
+            margin-bottom: 20px;
+         }
+    }
+}

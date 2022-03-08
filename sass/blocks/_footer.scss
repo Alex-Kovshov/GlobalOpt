@@ -1,0 +1,153 @@
+.footer {
+    min-height: 200px;
+    background: #25333c;
+    padding: 10px 0;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        min-height: 120px;
+        align-items: center;
+        position: relative;
+        padding-bottom: 10px;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background: #677177;
+        }
+    }
+
+    
+
+    &__top-text {
+        color: var(--text-color);
+        font-size: 18px;
+        margin-right: 200px;
+    }
+
+    
+
+    &__contacts-text {
+        color: var(--text-color);
+        text-align: right;
+    }
+
+    &__phone a {
+        color: var(--text-color);
+        font-size: 18px;
+        font-weight: 700;
+        &:hover {
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+    }
+
+    &__down {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+    }
+
+    &__down-text {
+        color: var(--text-color);
+    }
+
+    &__down-politica a {
+        color: #ec644b;
+    }
+
+    &__down-site {
+        color: var(--text-color);
+        
+    }
+}
+
+
+@media screen and (max-width: 1125px) {
+    .footer {
+        &__top-text {
+           font-size: 18px;
+           margin-right: 0px;
+        }
+    }
+}
+@media screen and (max-width: 1025px) {
+    .footer {
+        &__top {
+            min-height: 90px;
+        }
+        &__top-text {
+           font-size: 14px;
+           margin-right: 0px;
+        }
+        &__phone a {
+            font-size: 16px;
+           
+        }
+        &__top-logo img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .footer {
+        min-height: 140px;
+        &__top {
+            min-height: 70px;
+        }
+        &__top-text {
+           font-size: 12px;
+           margin-right: 0px;
+        }
+        &__phone a {
+            font-size: 14px;
+           
+        }
+        &__top-logo img {
+            width: 60px;
+            height: 60px;
+        }
+        &__down {
+            height: 70px;
+        }
+        &__down-text {
+           font-size: 14px;
+        }
+    
+        &__down-politica a {
+            font-size: 14px;
+        }
+        &__down-site {
+            font-size: 14px;
+        }
+    }
+}
+@media screen and (max-width: 550px) {
+    .footer {
+        &__top {
+            display: flex;
+            flex-direction: column;
+        }
+        &__top-text {
+            font-size: 10px;
+            margin-right: 0px;
+         }
+        &__down-site {
+            display: none;
+        }
+        &__down {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          
+        }
+    }
+    
+}

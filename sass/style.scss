@@ -1,0 +1,30 @@
+@import 'base/variables';
+@import 'base/mixins';
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap');
+
+
+@import 'libs/bootstrap-grid.min';
+@import 'libs/bootstrap-reboot.min';
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+@import 'blocks/header';
+@import 'blocks/intro';
+@import 'blocks/benefits';
+@import 'blocks/ourwork';
+@import 'blocks/agent';
+@import 'blocks/price';
+@import 'blocks/consultation';
+@import 'blocks/managers';
+@import 'blocks/scheme';
+@import 'blocks/reviews';
+@import 'blocks/quest';
+@import 'blocks/iframe';
+@import 'blocks/footer';
+@import 'blocks/pageup';
+

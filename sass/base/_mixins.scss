@@ -1,0 +1,35 @@
+@mixin title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 60px;
+    color: var(--text-color);
+}
+
+@mixin circle {
+    &:before {
+        content: "";
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: #FFA501;
+        z-index: -1;
+    }
+    
+}
+
+@mixin btn {
+    padding: 15px 25px;
+    font-size: 14px;
+    color: var( --text-color);
+    font-weight: 600;
+    background: #ec644b;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 50px;
+    border: none;
+    height: 50px;
+    cursor: pointer;
+}
