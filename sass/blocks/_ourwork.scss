@@ -1,0 +1,144 @@
+.ourwork {
+    padding: 50px 0;
+    
+    &__title {
+        text-transform: uppercase;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    &__divider {
+        width: 150px;
+        height: 3px;
+        background-color: var(--btn-color);
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    &__discr {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 960px;
+        font-size: 24px;
+        font-weight: 400;
+        text-align: center;
+        p {
+            line-height: 1.2;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        width: 33.33333%;
+        margin-top: 30px;
+        padding: 0 15px;
+    }
+
+    &__item-images {
+        width: 100%;
+        height: auto;
+        img {
+            width: 100%;
+        }
+    }
+
+    &__item-title {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--btn-color);
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    &__item-text {
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 1025px) {
+    .ourwork {
+        &__title {
+            font-size: 18px;
+           
+        }
+        &__divider {
+            width: 130px;
+        }
+        &__discr {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 750px;
+            font-size: 18px;
+            font-weight: 400;
+            text-align: center;
+            p {
+                line-height: 1.2;
+            }
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    .ourwork {
+        &__item-title {
+            font-size: 14px;
+        }
+        &__item-text {
+           font-size: 12px;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .ourwork {
+        padding: 30px 0;
+        &__title {
+            font-size: 12px;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        &__wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        &__item {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 30px;
+            padding: 0 15px;
+        }
+        &__item-title {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        &__item-text {
+           font-size: 14px;
+        }
+        &__divider {
+            width: 80px;
+        }
+    
+    }
+}
+@media screen and (max-width: 450px) {
+    .ourwork {
+        &__item-title {
+            font-size: 16px;
+            margin-top: 0px;
+        }
+        &__item-text {
+            font-size: 14px;
+            margin-top: 0;
+         }
+    }
+}
